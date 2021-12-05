@@ -24,6 +24,12 @@
           null
         ]
       },
+      "/root/CS-3300-001/app/helpers/home_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/root/CS-3300-001/app/helpers/projects_helper.rb": {
         "lines": [
           1,
@@ -110,6 +116,14 @@
           null
         ]
       },
+      "/root/CS-3300-001/app/controllers/home_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/root/CS-3300-001/app/models/project.rb": {
         "lines": [
           1,
@@ -147,6 +161,15 @@
         "branches": {
         }
       },
+      "/root/CS-3300-001/app/controllers/welcome_controller.rb": {
+        "lines": [
+          null,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/root/CS-3300-001/app/mailers/application_mailer.rb": {
         "lines": [
           0,
@@ -158,6 +181,6 @@
         }
       }
     },
-    "timestamp": 1638481088
+    "timestamp": 1638737921
   }
 }

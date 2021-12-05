@@ -1,0 +1,22 @@
+.navbar .navbar-nav .nav-link {
+    color: #000000;
+    font-size: 1.1em;
+  }
+  .hover1.navbar .navbar-nav .nav-link {
+    padding: 0.6em;
+  }
+  .hover1.navbar .navbar-brand {
+    padding: 0 0.6em;
+  }
+  @media only screen and (min-width: 960px) {
+    .hover1.navbar {
+      padding: 0;
+    }
+    .hover1.navbar .navbar-nav .nav-link {
+      padding: 1em 0.7em;
+      transition: all 0.5s;
+    }
+    .hover1.navbar .navbar-brand {
+      padding: 0 0.8em;
+    }
+  }

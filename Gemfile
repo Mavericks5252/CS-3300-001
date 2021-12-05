@@ -72,7 +72,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.7'
 end
 gem 'devise'
-
+gem 'bootstrap', '~> 4.6.1'
+gem 'jquery-rails'
 group :test do
   # Might be other lines here, so simply add after them
   gem 'factory_bot_rails'
