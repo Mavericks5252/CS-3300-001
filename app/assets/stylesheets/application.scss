@@ -16,5 +16,6 @@
 
  // Custom bootstrap variables must be set or imported *before* bootstrap.
 
+@import "scaffolds";
 @import "bootstrap";
-@import "yeti";
+@import "scaffolds";
