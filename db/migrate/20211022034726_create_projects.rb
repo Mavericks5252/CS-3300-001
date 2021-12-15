@@ -5,6 +5,7 @@ class CreateProjects < ActiveRecord::Migration[5.2]
       t.text :description
 
       t.timestamps
+      polymorphic: true
     end
   end
 end

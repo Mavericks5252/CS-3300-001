@@ -1,11 +1,13 @@
 {
   "RSpec": {
     "coverage": {
-      "/root/CS-3300-001/app/models/project.rb": {
+      "/root/CS-3300-001/app/models/user.rb": {
         "lines": [
           1,
+          null,
+          null,
           1,
-          1,
+          null,
           null
         ]
       },
@@ -16,14 +18,33 @@
           null
         ]
       },
+      "/root/CS-3300-001/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/root/CS-3300-001/app/helpers/home_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/root/CS-3300-001/app/helpers/projects_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/root/CS-3300-001/app/controllers/projects_controller.rb": {
         "lines": [
           1,
           1,
+          1,
           null,
           null,
           1,
-          3,
+          4,
           null,
           null,
           null,
@@ -95,6 +116,23 @@
           null
         ]
       },
+      "/root/CS-3300-001/app/controllers/home_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/root/CS-3300-001/app/models/project.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
       "/root/CS-3300-001/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
@@ -123,16 +161,9 @@
         "branches": {
         }
       },
-      "/root/CS-3300-001/app/helpers/application_helper.rb": {
+      "/root/CS-3300-001/app/controllers/welcome_controller.rb": {
         "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/root/CS-3300-001/app/helpers/projects_helper.rb": {
-        "lines": [
+          null,
           0,
           0
         ],
@@ -150,6 +181,6 @@
         }
       }
     },
-    "timestamp": 1636425394
+    "timestamp": 1639539151
   }
 }
