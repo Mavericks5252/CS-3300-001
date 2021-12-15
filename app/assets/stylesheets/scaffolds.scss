@@ -33,3 +33,10 @@ color: #000000;
 .topnav-right {
   float: right;
 }
+
+
+.navbar .nav > li > a {
+  &.brand {
+    color: #ffffff;
+  }
+}

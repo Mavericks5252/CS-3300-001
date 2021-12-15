@@ -1,26 +1,45 @@
 <%= form_with(model: @project, local: true) do |form| %>
   <% if @project.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
+
+      <div class="alert alert-dismissible alert-danger">
+      <strong> <%=pluralize(@project.errors.count, "error") %> prohibited this project from being saved
+    </div>
 
       <ul>
-      <% @project.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
       </ul>
     </div>
   <% end %>
-  
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title, class: 'form-control' %> 
+
+  <% invalid = project.errors.include?(:title) %>
+  <div class="form-group">
+  <%= form.label :title %>
+  <%= form.text_field :title, class: "form-control #{'is-invalid' if invalid}" %>
+  <% if invalid %>
+    <div class="invalid-feedback d-block">
+      <% project.errors.full_messages_for(:title).each do |error_message| %>
+        <%= error_message %>.
+      <% end %>
+    </div>
+  <% end %>
+
+  <% invalid = project.errors.include?(:description) %>
+  <div class="form-group">
+  <%= form.label :description %>
+  <%= form.text_field :description, class: "form-control #{'is-invalid' if invalid}" %>
+  <% if invalid %>
+    <div class="invalid-feedback d-block">
+      <% project.errors.full_messages_for(:description).each do |error_message| %>
+        <%= error_message %>.
+      <% end %>
+    </div>
+  <% end %>
+
   </div>
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description , class: 'form-control' %>
+  <div class="form-group">
+    <%= form.submit nil, class: 'btn btn-success' %>
+     <%= link_to 'Back', root_path, class: 'btn btn-dark' %>
   </div>
-  <div class="actions">
-    <%= form.submit,class: 'btn btn-success' %>
-  </div>
+
 
 <% end %>
