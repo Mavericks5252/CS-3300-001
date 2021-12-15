@@ -10,6 +10,9 @@ jobs:
       - run:
           name: rspec
           command: bundle install && bundle exec rake db:migrate RAILS_ENV=test && bundle exec rspec
+          database:
+            override:
+                - bundle exec rails db:create; bundle exec rails db:migrate; bundle exec rails db:migrate RAILS_ENV=test
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
